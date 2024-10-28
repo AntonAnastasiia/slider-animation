@@ -1,0 +1,112 @@
+/* Загальний стиль для сторінки налаштувань */
+.wrap {
+    background: #ffffff;
+    padding: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+} 
+
+#slider-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.slider-image {
+    position: relative;
+    background: #f1f1f1;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 150px;
+    height: 150px;
+}
+
+.slider-image img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 5px;
+}
+
+.slider-image .remove-slide {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: #000000;
+    color: #ffffff;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.slider-image .remove-slide:hover {
+    background: #c82333;
+    color:#ffffff;
+}
+
+#add-slide {
+    display: inline-block;
+    background: #0073aa;
+    color: #ffffff;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#add-slide:hover {
+    background: #005a87;
+}
+
+#slider-animation-form input[type="submit"] {
+    background: #28a745;
+    color: #ffffff;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#slider-animation-form input[type="submit"]:hover {
+    background: #218838;
+}
+
+.notice {
+    margin-top: 10px;
+    padding: 10px;
+    border-left: 4px solid;
+    background: #f8f9fa;
+    border-radius: 3px;
+}
+
+.notice-success {
+    border-color: #28a745;
+    color: #155724;
+}
+
+.notice-error {
+    border-color: #dc3545;
+    color: #721c24;
+}
+
+.animation-settings {
+    margin-bottom: 30px;
+}
